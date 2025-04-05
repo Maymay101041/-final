@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+ 
+     <h1>แม่สูตรคูณของเลข 21 จำนวน 15 ตัว</h1>
+     <ul id="multiplication-table"></ul>
+ 
+     <script>
+         let number = 21;
+         let total = 15;
+ 
+         let list = document.getElementById("multiplication-table");
+ 
+         for (let i = 1; i <= total; i++) {
+             let result = number * i;
+             let item = document.createElement("li");
+             item.textContent = number + " × " + i + " = " + result;
+             list.appendChild(item);
+         }
+     </script>
+ 
+ </body>
+ </html>
